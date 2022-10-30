@@ -1,17 +1,91 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Page Title</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>myweb</title>
+    <style>
+        body{
+            background-image: url('file:///C:/html/27967.jpg');
+            background-attachment:fixed;
+            background-repeat: no-repeat;
+            background-size:cover;
+
+        }
+        .box1{
+            font-family: "Sofia", sans-serif;
+            font-weight: bold;
+            font-size: 30px;
+            color: rgb(6, 7, 7);
+            text-align: center;
+        }
+        .s{
+            background: linear-gradient(to left, #999966 0%, #669999 100%);
+            font-family: "Audiowide", sans-serif;
+            color: white;
+            font-weight: bold;
+            padding: 16px;
+            font-size: 16px;
+            border: 1px;
+            border-style: dashed;
+            cursor: pointer;
+        }
+        .ss{
+            position: relative;
+            display: inline-block;
+            top: 100px;
+            left: 700px;
+            
+            }
+        .s-content {
+                            display: none;
+                            position: absolute;
+                            background-color: #f9f9f9;
+                            min-width: 160px;
+                            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                            z-index: 1;
+                            }
+
+        .s-content a {
+                        color: black;
+                        padding: 12px 16px;
+                        text-decoration: none;
+                        display: block;
+                            }
+
+        .s-content a:hover {background-color: #f1f1f1}
+
+        .ss:hover .s-content {
+                                display: block;
+                            }
+
+        .ss:hover .s {
+                         background-color: #3e8e41;
+                    }
+
+
+
+
+    </style>
 </head>
+
 <body>
 
-<p>班級:資工二甲</p><br>
-<p>姓名:范采芮</p><br>
-<p>座號:1111032008</p><br>
-<a href="https://rcy95.github.io/2026/">作業2:HTML表格</a><br>
-<a href="https://rcy95.github.io/919597/">作業3:九九乘法表</a><br>
-<a href="https://rcy95.github.io/bw/">作業4:div排版</a>
-
-
+<div class="box1"> 
+    班級:資工二甲<br>
+    姓名:范采芮<br>
+    座號:1111032008<br>
+</div>
+    <div class="ss">
+        <botton class="s">Homework</botton>
+            <div class="s-content">
+                <a href="https://rcy95.github.io/2026/">作業2:HTML表格</a>
+                <a href="https://rcy95.github.io/919597/">作業3:九九乘法表</a>
+                <a href="https://rcy95.github.io/bw/">作業4:div排版</a>
+            </div>   
+    </div> 
 </body>
 </html>
